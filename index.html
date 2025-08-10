@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethan Cole — Shopify Services</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0 1rem;
+      background: #f9fbff;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a4dbf;
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 8px rgb(10 77 191 / 0.3);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 0.05em;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 2rem auto 3rem;
+      width: 100%;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #0a4dbf;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #0a4dbf;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    .about {
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+    }
+    .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .service-item {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 8px rgb(10 77 191 / 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+      box-shadow: 0 5px 15px rgb(10 77 191 / 0.2);
+    }
+    .service-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+      font-weight: 700;
+      color: #073d9a;
+      font-size: 1.25rem;
+    }
+    .service-item p {
+      margin: 0.3rem 0 0.8rem 0;
+      color: #444;
+    }
+    .service-link {
+      color: #0a4dbf;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .service-link:hover {
+      text-decoration: underline;
+      color: #063d8b;
+    }
+    .contact-info p {
+      font-size: 1.05rem;
+      margin: 0.3rem 0;
+    }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+    }
+    .social-icons a {
+      color: #0a4dbf;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #063d8b;
+    }
+    footer {
+      background: #0a4dbf;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    form {
+      max-width: 600px;
+      margin-top: 1rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgb(10 77 191 / 0.15);
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #073d9a;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #0a4dbf;
+    }
+    form button {
+      background: #0a4dbf;
+      color: white;
+      padding: 0.7rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background: #063d8b;
+    }
+  </style>
+  <script>
+    // Simple form submit handler (will just prevent default and alert)
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Thanks for reaching out! I will get back to you soon.');
+      e.target.reset();
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Ethan Cole</h1>
+    <p>Crafting High-Converting Shopify Stores That Grow Your Business</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hi! I specialize in building Shopify stores that look great and convert visitors into customers. Whether you need a fresh design or a full redesign, I’m here to help you grow your online business.</p>
+    </section>
+
+    <section class="services">
+      <h2>Services</h2>
+      <ul class="services-list">
+        <li class="service-item">
+          <h3>Store Design for Luna and Sol Organics</h3>
+          <p>Designed a clean, user-friendly Shopify store tailored for Luna and Sol Organics, enhancing their brand presence and customer experience.</p>
+          <a href="https://lunaandsolorganics.com" target="_blank" class="service-link" rel="noopener">lunaandsolorganics.com</a>
+        </li>
+        <li class="service-item">
+          <h3>Premium Redesign for Herculean Apparel</h3>
+          <p>Transformed Herculean Apparel’s basic store into a premium, modern online storefront that elevates their brand image and boosts shopper engagement.</p>
+        </li>
+        <li class="service-item">
+          <h3>Custom Store Design for Ideaure</h3>
+          <p>Developed a one-of-a-kind Shopify store for Ideaure using a premium theme, combining sleek design with seamless functionality.</p>
+          <a href="https://ideaure.com" target="_blank" class="service-link" rel="noopener">ideaure.com</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <p><em>“Ethan transformed our Shopify store and boosted our sales significantly!”</em> — Ally Reese</p>
+      <p><em>“Professional, timely, and excellent design skills.”</em> — Diana</p>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Instagram: <a href="https://instagram.com/shopsproutstudio" target="_blank" rel="noopener">@shopsproutstudio</a></p>
+      <p>Email: <a href="mailto:ethancole581@gmail.com">ethancole581@gmail.com</a></p>
+      <p>Phone no: <a href="sms:+15127663381">+1 512-766-3381</a></p>
+
+      <form onsubmit="handleSubmit(event)">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your full name" />
+
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" required placeholder="your.email@example.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ethan Cole | Crafted with care for Shopify success</p>
+  </footer>
+</body>
+</html>
